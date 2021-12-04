@@ -62,13 +62,13 @@ class _AddEditNotePageState extends State<AddEditNotePage> {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           onPrimary: Colors.white,
-          primary: Colors.red,
+          primary: Colors.white,
 
         ),
         onPressed: addOrUpdateNote,
         child: Text('Save', style: GoogleFonts.caveat(
           textStyle: const TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontSize: 25,
             letterSpacing: 2,
             fontWeight: FontWeight.w700,

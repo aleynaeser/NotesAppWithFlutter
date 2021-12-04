@@ -71,8 +71,10 @@ class _NotesPageState extends State<NotesPage> {
                   : buildNotes(),
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black54,
-          child: Icon(Icons.add),
+          backgroundColor: Colors.white,
+          child: Icon(Icons.add,
+            color: Colors.black54,
+          ),
           onPressed: () async {
             await Navigator.of(context).push(
               MaterialPageRoute(builder: (context) => AddEditNotePage()),

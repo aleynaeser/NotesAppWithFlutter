@@ -47,8 +47,12 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
                 child: ListView(
                   padding: EdgeInsets.symmetric(vertical: 8),
                   children: [
-                    Text(
+                    SelectableText(
                       note.title,
+                      cursorColor: Colors.white,
+                      showCursor: false,
+                      toolbarOptions: const ToolbarOptions(
+                          copy: true, selectAll: true, cut: false, paste: false),
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 22,
@@ -61,8 +65,12 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
                       style: TextStyle(color: Colors.white38),
                     ),
                     SizedBox(height: 8),
-                    Text(
+                    SelectableText(
                       note.description,
+                      cursorColor: Colors.white,
+                      showCursor: false,
+                      toolbarOptions: const ToolbarOptions(
+                          copy: true, selectAll: true, cut: false, paste: false),
                       style: TextStyle(color: Colors.white70, fontSize: 18),
                     )
                   ],

@@ -41,6 +41,10 @@ class NoteFormWidget extends StatelessWidget {
   Widget buildTitle() => TextFormField(
         maxLines: 1,
         initialValue: title,
+        cursorColor: Colors.white,
+        showCursor: true,
+        toolbarOptions: const ToolbarOptions(
+            copy: true, selectAll: true, cut: true, paste: true),
         style: TextStyle(
           color: Colors.white70,
           fontWeight: FontWeight.bold,
@@ -59,6 +63,10 @@ class NoteFormWidget extends StatelessWidget {
   Widget buildDescription() => TextFormField(
         maxLines: 5,
         initialValue: description,
+        cursorColor: Colors.white,
+        showCursor: true,
+        toolbarOptions: const ToolbarOptions(
+            copy: true, selectAll: true, cut: true, paste: true),
         style: TextStyle(color: Colors.white60, fontSize: 18),
         decoration: InputDecoration(
           border: InputBorder.none,
