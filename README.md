@@ -10,7 +10,9 @@ It is a basic flutter ui for your notes written in Flutter.
  </thead>
  <tbody>
   <tr><td>You can add you notes</td></tr>
+  <tr><td>You can edit you notes</td></tr>
   <tr><td>You can copy the your notes and use them wherever you want.</td></tr>
+  
 </table>
 
 ## This app have following things:
