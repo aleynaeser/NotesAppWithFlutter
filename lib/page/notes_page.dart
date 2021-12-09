@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:sqflite_database_example/db/notes_database.dart';
 import 'package:sqflite_database_example/model/note.dart';
 import 'package:sqflite_database_example/page/edit_note_page.dart';
@@ -43,13 +42,12 @@ class _NotesPageState extends State<NotesPage> {
         appBar: AppBar(
           title: Text(
             'My Notes',
-            style: GoogleFonts.caveat(
-              textStyle: const TextStyle(
-                color: Colors.white,
-                fontSize: 40,
-                letterSpacing: 2,
-                fontWeight: FontWeight.w700,
-              ),
+            style: TextStyle(
+              fontFamily: 'Caveat',
+              color: Colors.white,
+              fontSize: 39,
+              letterSpacing: 2,
+              fontWeight: FontWeight.w700,
             ),
           ),
         ),
@@ -59,20 +57,20 @@ class _NotesPageState extends State<NotesPage> {
               : notes.isEmpty
                   ? Text(
                       'No notes! Click add button.',
-                      style: GoogleFonts.caveat(
-                        textStyle: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          letterSpacing: 2,
-                          fontWeight: FontWeight.w700,
-                        ),
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Caveat',
+                        fontSize: 21,
+                        letterSpacing: 2,
+                        fontWeight: FontWeight.w700,
                       ),
                     )
                   : buildNotes(),
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.white,
-          child: Icon(Icons.add,
+          child: Icon(
+            Icons.add,
             color: Colors.black54,
           ),
           onPressed: () async {

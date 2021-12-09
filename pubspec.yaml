@@ -20,9 +20,19 @@ dependencies:
   # display todos in grid
   flutter_staggered_grid_view: ^0.4.0-nullsafety.3
 
+
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+
+
+
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Caveat
+      fonts:
+        - asset: fonts/Caveat-Regular.ttf

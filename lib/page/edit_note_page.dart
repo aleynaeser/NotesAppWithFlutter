@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:sqflite_database_example/db/notes_database.dart';
 import 'package:sqflite_database_example/model/note.dart';
 import 'package:sqflite_database_example/widget/note_form_widget.dart';
+
 
 
 class AddEditNotePage extends StatefulWidget {
@@ -66,14 +66,15 @@ class _AddEditNotePageState extends State<AddEditNotePage> {
 
         ),
         onPressed: addOrUpdateNote,
-        child: Text('Save', style: GoogleFonts.caveat(
-          textStyle: const TextStyle(
+        child: Text('Save', style:
+        TextStyle(
             color: Colors.black,
             fontSize: 25,
             letterSpacing: 2,
+            fontFamily: 'Caveat',
             fontWeight: FontWeight.w700,
           ),
-        ),),
+         ),
       ),
     );
   }
