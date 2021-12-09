@@ -15,7 +15,7 @@ It is a basic flutter ui for your notes written in Flutter.
   
 </table>
 
-## This app have following things:
+## This app has following things:
 
 
 <h4 align="center">
