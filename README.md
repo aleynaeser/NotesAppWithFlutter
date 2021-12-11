@@ -1,4 +1,5 @@
-# My Notes App https://play.google.com/store/apps/details?id=com.my_colorful_easy_notes_application
+# My Notes App 
+## https://play.google.com/store/apps/details?id=com.my_colorful_easy_notes_application
 
 It is a basic flutter ui for your notes written in Flutter.
 
